@@ -14,6 +14,7 @@ import com.google.gwt.user.client.ui.DialogBox;
 import com.google.gwt.user.client.ui.HTML;
 import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.RootPanel;
+import com.google.gwt.user.client.ui.TextArea;
 import com.google.gwt.user.client.ui.TextBox;
 import com.google.gwt.user.client.ui.VerticalPanel;
 
@@ -43,6 +44,8 @@ public class Directmapping implements EntryPoint {
 		final TextBox nameField = new TextBox();
 		nameField.setText("GWT User");
 		final Label errorLabel = new Label();
+		final TextArea inputAreaField = new TextArea();
+		inputAreaField.setText("place input here");
 
 		// We can add style names to widgets
 		sendButton.addStyleName("sendButton");
@@ -52,6 +55,7 @@ public class Directmapping implements EntryPoint {
 		RootPanel.get("nameFieldContainer").add(nameField);
 		RootPanel.get("sendButtonContainer").add(sendButton);
 		RootPanel.get("errorLabelContainer").add(errorLabel);
+		RootPanel.get("inputAreaContainer").add(inputAreaField);
 
 		// Focus the cursor on the name field when the app loads
 		nameField.setFocus(true);
